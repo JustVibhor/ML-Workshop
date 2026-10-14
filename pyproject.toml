@@ -1,0 +1,21 @@
+[project]
+name = "ai-engineering-from-scratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JustVibhor", email = "vibhorebhatneriya@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+ai-engineering-from-scratch = "ai_engineering_from_scratch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"

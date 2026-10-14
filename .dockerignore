@@ -1,0 +1,17 @@
+.git
+.venv
+__pycache__
+*.py[cod]
+node_modules
+target
+data
+models
+checkpoints
+wandb
+mlruns
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+*.h5

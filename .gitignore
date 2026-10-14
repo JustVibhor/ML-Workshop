@@ -95,3 +95,11 @@ site/langs.js
 !.claude/skills/build-project/**
 site/projects-data.js
 site/project-content/
+
+*.bin
+*.safetensors
+*.pt
+*.onnx
+data/*.parquet
+data/*.csv
+models/

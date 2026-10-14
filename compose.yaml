@@ -1,0 +1,22 @@
+services:
+  ai-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+      - model-cache:/models
+    working_dir: /workspace
+    command: ["ai-engineering-from-scratch"]
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.5
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant-data:/qdrant/storage
+
+volumes:
+  model-cache:
+  qdrant-data:
